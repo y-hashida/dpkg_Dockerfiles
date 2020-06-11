@@ -14,8 +14,8 @@ $ docker build -t ubuntu_dpkg_build:focal docker_focal/
 
 ```
 ## Ubuntu 18.04 (bionic)
-$ docker run --rm -it -v $(pwd):/opt/dpkg -w /opt/dpkg ubuntu_dpkg_build:bionic bash
+$ docker run --rm -it -v $(pwd):/opt/work -w /opt/work ubuntu_dpkg_build:bionic bash
 
 ## Ubuntu 20.04 (focal)
-$ docker run --rm -it -v $(pwd):/opt/dpkg -w /opt/dpkg ubuntu_dpkg_build:focal bash
+$ docker run --rm -it -v $(pwd):/opt/work -w /opt/work ubuntu_dpkg_build:focal bash
 ```
